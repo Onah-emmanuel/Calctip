@@ -21,7 +21,7 @@
             <label >Bill</label> <br>
             <span class="me">
                 <i class="fa-solid fa-dollar-sign"></i>
-            <input type="number">
+            <input id="in" type="number">
 
             </span>
         </div>
@@ -33,13 +33,13 @@
 
             <div class="see">
                 <div class="amount">
-                    <h2>5%</h2>
-                    <h2>10%</h2>
-                    <h2>15%</h2>
+                    <h2 id="u">5%</h2>
+                    <h2 class="x">10%</h2>
+                    <h2 class="y">15%</h2>
         
                 </div>
                 <div class="amount">
-                    <h2>25%</h2>
+                    <h2 >25%</h2>
                     <h2>50%</h2>
                     <input type="number" placeholder="Custom">
                 </div>
@@ -56,25 +56,26 @@
              </span> <br>
              <span class="me">
                 <i class="fa-solid fa-user"></i>
-                <input type="number" >
+                <input id="pnum"  type="number" >
              </span>
-             
+             <button onclick="func()"  class="men">Calculate</button>
         </div>
     </div>
    
     <div class="div3">
         <div>
             <h3><span>Tip Amount</span><br> / person</h3>
-            <h2>$0.00</h2>
+            <h2 id="mm">$0.00</h2>
         </div>
 
         <div>
-            <h3><span>Total</span><br> / person</h3>
-            <h2>$0.00</h2>
+            <h3><span>Total</span><br> / Everyone</h3>
+            <h2 id="ne">$0.00</h2>
         </div>
 
-        <button>RESET</button>
+        <button id="reset" onclick="clear()">RESET</button>
     </div>
    </section>
+   <script src="CalcTip.js"></script>
 </body>
 </html>
