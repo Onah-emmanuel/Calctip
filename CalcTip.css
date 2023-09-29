@@ -38,6 +38,15 @@ body {
     margin-right: 0;
     
 }
+.ep {
+    display: flex;
+    
+}
+#emp {
+    color: red;
+    margin-left: 8%;
+    visibility: hidden;
+}
 .label1 label {
     color:  hsl(186, 14%, 43%);
     font-size: 15px;
@@ -121,7 +130,7 @@ body {
     outline: none;
 
 }
-.number .cant {
+.number #cant {
     font-size: 15px;
     margin-bottom: 10px;
     color: red;
